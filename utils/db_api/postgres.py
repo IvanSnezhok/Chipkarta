@@ -84,18 +84,13 @@ class Database:
         sql = "SELECT * FROM Users"
         return await self.execute(sql, fetch=True)
 
-    async def select_user(self, **kwargs):
-        sql = "SELECT * FROM Users WHERE "
-        sql, parameters = self.format_args(sql, parameters=kwargs)
-        return await self.execute(sql, *parameters, fetchrow=True)
+    async def select_user(self, telegram_id):
+        sql = "SELECT full_name, phone_number FROM users WHERE telegram_id=$1"
+        return await self.execute(sql, telegram_id, execute=True, fetchrow=True)
 
     async def select_lang(self, user_id):
         sql = "SELECT lang FROM users WHERE telegram_id=$1"
         return await self.execute(sql, user_id, execute=True, fetchval=True)
-
-    async def select_contract(self, user_id):
-        sql = "SELECT contract FROM users WHERE telegram_id=$1"
-        return await self.execute(sql, user_id, execute=True, fetch=True)
 
     async def select_tel(self, user_id):
         sql = "SELECT phone_number FROM users WHERE telegram_id=$1 "

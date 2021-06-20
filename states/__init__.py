@@ -1,1 +1,1 @@
-from .documents import Doc
+from .documents import PassId, Pass

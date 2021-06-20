@@ -11,7 +11,7 @@ lang_button = ReplyKeyboardMarkup(resize_keyboard=True, keyboard=[
 
 passport_choice = ReplyKeyboardMarkup(resize_keyboard=True, keyboard=[
     [
-        KeyboardButton(text=__("Паспорт нового образца")),
-        KeyboardButton(text=__("Паспорт старого образца"))
+        KeyboardButton(text=__("Паспорт нового зразка")),
+        KeyboardButton(text=__("Паспорт старого зразка"))
     ]
 ], one_time_keyboard=True)
