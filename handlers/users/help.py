@@ -1,13 +1,33 @@
 from aiogram import types
-from aiogram.dispatcher.filters.builtin import CommandHelp
+from aiogram.dispatcher.filters.builtin import CommandHelp, Command
 
-from loader import dp
+from keyboards.default.keyboard import return_button
+from loader import dp, db
+from middlewares import _, __
 
 
-@dp.message_handler(CommandHelp())
-async def bot_help(message: types.Message):
-    text = ("Список команд: ",
-            "/start - Начать диалог",
-            "/help - Получить справку")
-    
-    await message.answer("\n".join(text))
+@dp.message_handler(Command('Terms_of_Use'))
+async def terms_of_use(message: types.Message):
+    await db.message(message.from_user.full_name, message.from_user.id, message.text, message.date)
+    msg = await message.answer(
+        text=_("Згода на збирання та обробку персональних даних.\n"
+               " Я, громадянин України, даю згоду ТОВ \"ІСК\" та ДП «ДержавтотрансНДІпроект», 03113, м. Київ, пр. Перемоги, 57 на обробку моїх персональних даних відповідно до Закону України \"Про захист персональних даних\" № 2297-VI від 01.06.2010 з метою забезпечення договірних відносин в ході здійснення господарської діяльності, передбаченої статутом ДП «ДержавтотрансНДІпроект».\n"
+               " Цю згоду я надаю на строк дії договірних відносин згідно із законодавством.\n"
+               " Під обробкою персональних даних я розумію будь-яку дію або сукупність дій, які пов'язані зі збиранням, реєстрацією, накопиченням,зберіганням, використанням і поширенням, знеособленням, знищенням відомостей про мене.\n`"
+               " Під персональними даними я розумію відомості чисукупність відомостей про мене, за якими я можу бути ідентифікований.\n"
+               " Мене також поінформовано, що мої персональні дані будуть включені вбазу персональних даних «Клієнт» ДП «ДержавтотрансНДІпроект»"),
+    reply_markup=return_button)
+    await db.message("BOT", 10001, msg, message.date.time())
+
+@dp.message_handler(Command('Description_of_the_service'))
+async def description_of_the_service(message: types.Message):
+    await db.message(message.from_user.full_name, message.from_user.id, message.text, message.date)
+    msg = await message.answer(text=_("Оформлення чіп-карти від Державного Автотранспортного Науково-дослідного і проектного Інституту (ДП ДержавтотрансНДІпроект) для фізичних та юридичних осіб.\n"
+                                      "Як це працює:\n"
+                                      "• Ви передаєте через цей чат-бот фото документів водія, на ім'я якого необхідно буде укласти чіп-карти (фото паспорта, ідентифікаційного коду, водійських прав та фото 3,5 * 4,5 см).\n"
+                                      "• Після отримання всіх необхідних документів та фото водія ми готуємо документи до державного органу з видачі чіп-карти.\n"
+                                      "• Відправляємо посилання для відстеження стану процесу виготовлення чіп-карти\n."
+                                      "• На Ваше ім'я виставляється рахунок на оплату держ. мит (1970 грн) і наших послуг (250 грн.) оплата проводиться одночасно.\n"
+                                      "• Після оплати, очікуйте Вашу чіп-карту. За замовчуванням, чіп-карту надсилають на адресу прописки, можна замовити відправку Новою поштою."),
+                               reply_markup=return_button)
+    await db.message("BOT", 10001, msg, message.date.time())

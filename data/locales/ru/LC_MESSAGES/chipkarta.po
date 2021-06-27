@@ -19,3 +19,94 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
+#: handlers/users/echo.py:12
+msgid "Для взаємодії з ботом нажміть кнопку"
+msgstr ""
+
+#: handlers/users/echo.py:20
+msgid "Будь-ласка, користуйтесь згідно інструкції"
+msgstr ""
+
+#: handlers/users/pass_id.py:19
+msgid ""
+"Зараз необхідно передати скани чи фото Ваших документів для оформлення чіпкарти\n"
+"Надішліть, будь-ласка, лицьову сторону паспорту"
+msgstr ""
+
+#: handlers/users/pass_id.py:30 handlers/users/pass_old.py:29
+msgid ""
+"У нас відсутня інформація про Ваш номер телефону, пройдіть "
+"реєстрацю ще раз. Для цього введіть /start"
+msgstr ""
+
+#: handlers/users/pass_id.py:42
+msgid "Надішліть іншу сторону паспорту"
+msgstr ""
+
+#: handlers/users/pass_id.py:46 handlers/users/pass_id.py:61
+#: handlers/users/pass_id.py:76 handlers/users/pass_id.py:91
+#: handlers/users/pass_id.py:106 handlers/users/pass_id.py:121
+#: handlers/users/pass_id.py:136 handlers/users/pass_old.py:45
+#: handlers/users/pass_old.py:60 handlers/users/pass_old.py:75
+#: handlers/users/pass_old.py:90 handlers/users/pass_old.py:105
+#: handlers/users/pass_old.py:120 handlers/users/pass_old.py:135
+msgid "Ви відправили не фото, надішліть фотографію вашого документа"
+msgstr ""
+
+#: handlers/users/pass_id.py:57
+msgid "Бувідправте фото витягу паспорту"
+msgstr ""
+
+#: handlers/users/pass_id.py:72 handlers/users/pass_old.py:71
+msgid "Отправьте лицевую сторону Ваших прав"
+msgstr ""
+
+#: handlers/users/pass_id.py:87
+msgid "Отправьте лицевую сторону Ваших прав"
+msgstr ""
+
+#: handlers/users/pass_id.py:102 handlers/users/pass_old.py:86
+msgid "Отправьте пожалуйста, другую сторону прав"
+msgstr ""
+
+#: handlers/users/pass_id.py:117 handlers/users/pass_old.py:116
+msgid "Тепер відправте Ваше фото для друку в анкеті"
+msgstr ""
+
+#: handlers/users/pass_id.py:132 handlers/users/pass_old.py:131
+msgid "Спасибо, Ваши документы в обработке!"
+msgstr ""
+
+#: handlers/users/pass_old.py:19
+msgid ""
+"Сейчас необходимо передать фото документов для оформления чип-карты\n"
+"Отправьте первую страницу паспорта"
+msgstr ""
+
+#: handlers/users/pass_old.py:101
+msgid "Отправьте Ваш идентификационный код"
+msgstr ""
+
+#: handlers/users/start.py:22
+msgid "Оберіть зручну для Вас мову!"
+msgstr ""
+
+#: handlers/users/start.py:29
+msgid "Тепер, будь-ласка, відправте свій номер телефону для зв`язку з Вами"
+msgstr ""
+
+#: handlers/users/start.py:42
+msgid ""
+"Тут буде опис бота, на следуюущей кнопці можна перейти на відправку "
+"документів\n"
+"Потрібно тільки вибрати який паспорт у тебе"
+msgstr ""
+
+msgid "Вітаю, {}!"
+msgstr ""
+
+msgid "Паспорт нового зразку"
+msgstr ""
+
+msgid "Паспорт старого зразку"
+msgstr ""

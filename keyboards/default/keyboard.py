@@ -1,5 +1,5 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
-from middlewares import __
+from middlewares import __, _
 
 lang_button = ReplyKeyboardMarkup(resize_keyboard=True, keyboard=[
     [
@@ -13,5 +13,11 @@ passport_choice = ReplyKeyboardMarkup(resize_keyboard=True, keyboard=[
     [
         KeyboardButton(text=__("Паспорт нового зразка")),
         KeyboardButton(text=__("Паспорт старого зразка"))
+    ]
+], one_time_keyboard=True)
+
+return_button = ReplyKeyboardMarkup(resize_keyboard=True, keyboard=[
+    [
+        KeyboardButton(text=_("Главное меню"))
     ]
 ], one_time_keyboard=True)

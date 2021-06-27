@@ -16,8 +16,8 @@ async def set_state_id(message: types.Message):
     user = await db.select_user(telegram_id=message.from_user.id)
     if user[1]:
         await db.message(message.from_user.full_name, message.from_user.id, message.text, message.date)
-        await message.answer(_("Зараз ви маєте передати нам ваші документи для оформлення чіпкарти\n"
-                               "Надішліть будь ласка лицьову сторону паспорта"), reply_markup=ReplyKeyboardRemove())
+        await message.answer(_("Зараз необхідно передати скани чи фото Ваших документів для оформлення чіпкарти\n"
+                               "Надішліть, будь-ласка, лицьову сторону паспорту"), reply_markup=ReplyKeyboardRemove())
 
         await PassId.doc1.set()
         for admin in ADMINS:
@@ -39,11 +39,11 @@ async def get_passport_id(message: types.Message, state: FSMContext):
                 await dp.bot.send_photo(admin, message.photo[-1].file_id, "Лицевая сторона пасспорта")
             except Exception as err:
                 logging.exception(err)
-        await message.answer(text=_("Будь ласка надішліть задню сторону паспорта"))
+        await message.answer(text=_("Надішліть іншу сторону паспорту"))
 
         await PassId.doc2.set()
     else:
-        await message.answer(text=_("Ви відправити не фото, будь ласка, надішліть фотографію вашого документа"))
+        await message.answer(text=_("Ви відправили не фото, надішліть фотографію вашого документа"))
 
 
 @dp.message_handler(state=PassId.doc2, content_types=types.ContentTypes.PHOTO)
@@ -54,11 +54,11 @@ async def get_id(message: types.Message, state: FSMContext):
                 await dp.bot.send_photo(admin, message.photo[-1].file_id, "Задняя сторона паспорта")
             except Exception as err:
                 logging.exception(err)
-        await message.answer(text=_("Теперь отправьте следуюущий документ"))
+        await message.answer(text=_("Відправте фото витягу паспорту"))
 
         await PassId.doc3.set()
     else:
-        await message.answer(text=_("Ви відправити не фото, будь ласка, надішліть фотографію вашого документа"))
+        await message.answer(text=_("Ви відправили не фото, надішліть фотографію вашого документа"))
 
 
 @dp.message_handler(state=PassId.doc3, content_types=types.ContentTypes.PHOTO)
@@ -69,11 +69,11 @@ async def get_photo(message: types.Message, state: FSMContext):
                 await dp.bot.send_photo(admin, message.photo[-1].file_id, "Витяг про прописку")
             except Exception as err:
                 logging.exception(err)
-        await message.answer(text=_("Теперь отправьте следуюущий документ"))
+        await message.answer(text=_("Отправьте пожалуйста лицевую сторону ваших прав"))
 
         await PassId.doc4.set()
     else:
-        await message.answer(text=_("Ви відправити не фото, будь ласка, надішліть фотографію вашого документа"))
+        await message.answer(text=_("Ви відправили не фото, надішліть фотографію вашого документа"))
 
 
 @dp.message_handler(state=PassId.doc4, content_types=types.ContentTypes.PHOTO)
@@ -84,11 +84,11 @@ async def get_photo(message: types.Message, state: FSMContext):
                 await dp.bot.send_photo(admin, message.photo[-1].file_id, "Права, лицевая сторона")
             except Exception as err:
                 logging.exception(err)
-        await message.answer(text=_("Теперь отправьте следуюущий документ"))
+        await message.answer(text=_("Отправьте пожалуйста, другую сторону прав"))
 
         await PassId.doc5.set()
     else:
-        await message.answer(text=_("Ви відправити не фото, будь ласка, надішліть фотографію вашого документа"))
+        await message.answer(text=_("Ви відправили не фото, надішліть фотографію вашого документа"))
 
 
 @dp.message_handler(state=PassId.doc5, content_types=types.ContentTypes.PHOTO)
@@ -99,11 +99,11 @@ async def get_photo(message: types.Message, state: FSMContext):
                 await dp.bot.send_photo(admin, message.photo[-1].file_id, "Права, задняя сторона")
             except Exception as err:
                 logging.exception(err)
-        await message.answer(text=_("Теперь отправьте следуюущий документ"))
+        await message.answer(text=_("Відправте Ваш ідентифікаційний код"))
 
         await PassId.doc6.set()
     else:
-        await message.answer(text=_("Ви відправити не фото, будь ласка, надішліть фотографію вашого документа"))
+        await message.answer(text=_("Ви відправили не фото, надішліть фотографію вашого документа"))
 
 
 @dp.message_handler(state=PassId.doc6, content_types=types.ContentTypes.PHOTO)
@@ -114,11 +114,11 @@ async def get_photo(message: types.Message, state: FSMContext):
                 await dp.bot.send_photo(admin, message.photo[-1].file_id, "Идентификационный код")
             except Exception as err:
                 logging.exception(err)
-        await message.answer(text=_("Теперь отправьте следуюущий документ"))
+        await message.answer(text=_("Тепер відправте будь ласка ваше фото для друку в анкету"))
 
         await PassId.doc7.set()
     else:
-        await message.answer(text=_("Ви відправити не фото, будь ласка, надішліть фотографію вашого документа"))
+        await message.answer(text=_("Ви відправили не фото, надішліть фотографію вашого документа"))
 
 
 @dp.message_handler(state=PassId.doc7, content_types=types.ContentTypes.PHOTO)
@@ -133,4 +133,4 @@ async def get_photo(message: types.Message, state: FSMContext):
 
         await state.reset_state()
     else:
-        await message.answer(text=_("Ви відправити не фото, будь ласка, надішліть фотографію вашого документа"))
+        await message.answer(text=_("Ви відправили не фото, надішліть фотографію вашого документа"))
