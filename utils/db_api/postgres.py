@@ -59,7 +59,7 @@ class Database:
         full_name VARCHAR(255) NOT NULL,
         telegram_id BIGINT NOT NULL,
         date TIMESTAMP NOT NULL,
-        message VARCHAR(255) NULL
+        message VARCHAR NULL
         ); 
         """
         await self.execute(sql, execute=True)

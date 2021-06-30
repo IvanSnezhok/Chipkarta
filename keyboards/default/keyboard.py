@@ -18,6 +18,6 @@ passport_choice = ReplyKeyboardMarkup(resize_keyboard=True, keyboard=[
 
 return_button = ReplyKeyboardMarkup(resize_keyboard=True, keyboard=[
     [
-        KeyboardButton(text=_("Главное меню"))
+        KeyboardButton(text=__("Головне меню"))
     ]
 ], one_time_keyboard=True)

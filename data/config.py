@@ -10,7 +10,7 @@ BOT_TOKEN = env.str("BOT_TOKEN")  # Забираем значение типа s
 ADMINS = env.list("ADMINS")  # Тут у нас будет список из админов
 IP = env.str("ip")  # Тоже str, но для айпи адреса хоста
 
-I18N_DOMAIN = "Chipkarta"
+I18N_DOMAIN = "chipkarta"
 BASE_DIR = Path(__file__).parent
 LOCALES_DIR = BASE_DIR/'locales'
 
