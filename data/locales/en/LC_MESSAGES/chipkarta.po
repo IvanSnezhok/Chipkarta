@@ -1,0 +1,211 @@
+# English translations for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-06-30 16:41+0000\n"
+"PO-Revision-Date: 2021-06-30 11:39+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: handlers/users/echo.py:13
+msgid "Для взаємодії з ботом нажміть кнопку"
+msgstr "Для взаимодействия с ботом нажмите кнопку"
+
+#: handlers/users/echo.py:21
+msgid "Будь-ласка, користуйтесь згідно інструкції"
+msgstr "Please use according to the instructions"
+
+#: handlers/users/help.py:13
+msgid ""
+"Згода на збирання та обробку персональних даних.\n"
+"Я, громадянин України, даю згоду ТОВ \"ІСК\" та ДП "
+"«ДержавтотрансНДІпроект», 03113, м. Київ, пр. Перемоги, 57 на обробку "
+"моїх персональних даних відповідно до Закону України \"Про захист "
+"персональних даних\" № 2297-VI від 01.06.2010 з метою забезпечення "
+"договірних відносин в ході здійснення господарської діяльності, "
+"передбаченої статутом ДП «ДержавтотрансНДІпроект».\n"
+"Цю згоду я надаю на строк дії договірних відносин згідно із "
+"законодавством.\n"
+"Під обробкою персональних даних я розумію будь-яку дію або сукупність "
+"дій, які пов'язані зі збиранням, реєстрацією, накопиченням,зберіганням, "
+"використанням і поширенням, знеособленням, знищенням відомостей про мене."
+"\n"
+"Під персональними даними я розумію відомості чисукупність відомостей про "
+"мене, за якими я можу бути ідентифікований.\n"
+"Мене також поінформовано, що мої персональні дані будуть включені вбазу "
+"персональних даних «Клієнт» ДП «ДержавтотрансНДІпроект»"
+msgstr ""
+"Consent to the collection and processing of personal data.\n"
+"I, a citizen of Ukraine, give my consent to ISK LLC and the State Enterprise"
+"\"DerzhavtotransNDIproekt\", 03113, Kyiv, 57 Peremohy Ave."
+"my personal data in accordance with the Law of Ukraine \"On Protection "
+"personal data\" 2297-VI dated 01.06.2010 in order to ensure"
+"contractual relations in the course of economic activity,"
+"provided by the charter of DerzhavtotransNDIproekt.\n"
+"I give this consent for the duration of the contractual relationship in accordance with"
+"by law.\n"
+"By the processing of personal data I mean any action or set"
+"actions related to collection, registration, accumulation, storage,"
+"using and disseminating, depersonalizing, destroying information about me.\n"
+"By personal data I mean information or set of information about"
+"me by which I can be identified.\n"
+"I have also been informed that my personal data will be included in the database"
+"personal data \"Client\" of SE\"DerzhavtotransNDIproekt\""
+
+#: handlers/users/help.py:25
+msgid ""
+"Оформлення чіп-карти від Державного Автотранспортного Науково-дослідного "
+"і проектного Інституту (ДП ДержавтотрансНДІпроект) для фізичних та "
+"юридичних осіб.\n"
+"Як це працює:\n"
+"• Ви передаєте через цей чат-бот фото документів водія, на ім'я якого "
+"необхідно буде укласти чіп-карти (фото паспорта, ідентифікаційного коду, "
+"водійських прав та фото 3,5 * 4,5 см).\n"
+"• Після отримання всіх необхідних документів та фото водія ми готуємо "
+"документи до державного органу з видачі чіп-карти.\n"
+"• Відправляємо посилання для відстеження стану процесу виготовлення "
+"чіп-карти\n"
+".• На Ваше ім'я виставляється рахунок на оплату держ. мит (1970 грн) і "
+"наших послуг (250 грн.) оплата проводиться одночасно.\n"
+"• Після оплати, очікуйте Вашу чіп-карту. За замовчуванням, чіп-карту "
+"надсилають на адресу прописки, можна замовити відправку Новою поштою."
+msgstr ""
+"Registration of a chip card from the State Motor Transport Research"
+"and the Design Institute (SE DerzhavtotransNDIproekt) for physical and"
+"legal entities.\n"
+"How it works:\n"
+"• You send through this chatbot a photo of the documents of the driver in whose name"
+"it will be necessary to conclude chip cards (passport photo, identification code, (driver's license and photo 3.5 * 4.5 cm).\n"
+"• After receiving all the necessary documents and photos of the driver, we prepare"
+"documents to the state body for issuing chip cards.\n"
+"• We send links to track the status of the manufacturing process"
+"chip cards.\n"
+"• An invoice for payment of state duties (1970 UAH) and"
+"our services (UAH 250) are paid at the same time.\n"
+"• After payment, wait for your chip card. By default, chip card"
+"sent to the residence address, you can order sending by New mail."
+
+#: handlers/users/pass_id.py:20
+msgid ""
+"Зараз необхідно передати скани чи фото Ваших документів для оформлення "
+"чіпкарти\n"
+"Надішліть, будь-ласка, лицьову сторону паспорту"
+msgstr ""
+"Now you need to send scans or photos of your documents for "
+"registrationchip cards\n"
+"Please send the front of the passport"
+
+#: handlers/users/pass_id.py:32 handlers/users/pass_old.py:32
+msgid ""
+"У нас відсутня інформація про ваш номер телефону, будь ласка пройдіть "
+"регістрацю ще разДля цього увведіть /start"
+msgstr ""
+"We have no information about your phone number, please go throughregister"
+" again To do this, enter /start"
+
+#: handlers/users/pass_id.py:45
+msgid "Надішліть іншу сторону паспорту"
+msgstr "Send the other side of the passport"
+
+#: handlers/users/pass_id.py:50 handlers/users/pass_id.py:67
+#: handlers/users/pass_id.py:84 handlers/users/pass_id.py:101
+#: handlers/users/pass_id.py:118 handlers/users/pass_id.py:135
+#: handlers/users/pass_id.py:152 handlers/users/pass_old.py:50
+#: handlers/users/pass_old.py:67 handlers/users/pass_old.py:84
+#: handlers/users/pass_old.py:102 handlers/users/pass_old.py:120
+#: handlers/users/pass_old.py:137 handlers/users/pass_old.py:154
+msgid "Ви відправили не фото, будь ласка, надішліть фотографію вашого документа"
+msgstr "You sent no photo, please send a photo of your document"
+
+#: handlers/users/pass_id.py:62
+msgid "Відправте фото витягу паспорту"
+msgstr "Send a photo of the passport extract"
+
+#: handlers/users/pass_id.py:79 handlers/users/pass_old.py:79
+msgid "Надішліть будь ласка лицьову сторону ваших прав"
+msgstr "Please send the front of your rights"
+
+#: handlers/users/pass_id.py:96 handlers/users/pass_old.py:97
+msgid "Надішліть будь ласка, іншу сторону прав"
+msgstr "Please send the other side of the rights"
+
+#: handlers/users/pass_id.py:113 handlers/users/pass_old.py:115
+msgid "Відправте Ваш ідентифікаційний код"
+msgstr "Submit your ID"
+
+#: handlers/users/pass_id.py:130 handlers/users/pass_old.py:132
+msgid "Тепер відправте будь ласка ваше фото для друку в анкету"
+msgstr "Now please send your photo for printing in the application form"
+
+#: handlers/users/pass_id.py:147 handlers/users/pass_old.py:149
+msgid "Дякую, Ваші документи в обробці!"
+msgstr "Thank you, your documents are being processed!"
+
+#: handlers/users/pass_old.py:20
+msgid ""
+"Зараз необхідно передати скани чи фото Ваших документів для оформлення "
+"чіпкарти\n"
+"Надішліть, будь-ласка, першу сторінку паспорту"
+msgstr ""
+"Now you need to send scans or photos of your documents for "
+"registrationchip card\n"
+"Please send the first page of the passport"
+
+#: handlers/users/pass_old.py:45
+msgid "Надішліть, будь-ласка, другу сторінку паспорту"
+msgstr "Please send the second page of the passport"
+
+#: handlers/users/pass_old.py:62
+msgid "Надішліть, будь-ласка, сторінку з пропискою"
+msgstr "Please send a page with a residence permit"
+
+#: handlers/users/start.py:22
+msgid "Вітаю, {}!"
+msgstr "Hello, {}!"
+
+#: handlers/users/start.py:23
+msgid "Оберіть зручну для Вас мову!"
+msgstr "Choose a language that is convenient for you!"
+
+#: handlers/users/start.py:32
+msgid "Тепер, будь-ласка, відправте свій номер телефону для зв`язку з Вами"
+msgstr "Now, please send your phone number to contact you"
+
+#: handlers/users/start.py:46 handlers/users/start.py:60
+msgid ""
+"@chipkarta_bot - телеграм-бот для швидкого оформлення чіп-карти водія.\n"
+"Вартість послуги - 250 грн.\n"
+"Вартість держ. мита - 1970 грн.\n"
+"Оформлення - від 7 днів.\n"
+"Термін дії чіп-карти - 5 років.\n"
+"Оплата після оформлення документів.\n"
+"Використовуючи цей сервіс Ви даєте згоду на обробку персональних даних."
+msgstr ""
+"@chipkarta_bot is a telegram bot for a quick driver chip card.\n"
+"The cost of the service is UAH 250\n"
+"The cost of state duty is UAH 1,970.\n"
+"Registration - from 7 days.\n"
+"The chip card is valid for 5 years.\n"
+"Payment after processing of documents.\n"
+"By using this service, you consent to the processing of personal data."
+
+msgid "Паспорт нового зразка"
+msgstr "Passport of a new sample"
+
+msgid "Паспорт старого зразка"
+msgstr "Passport of the old model"
+
+msgid "Головне меню"
+msgstr "Main menu"
+
